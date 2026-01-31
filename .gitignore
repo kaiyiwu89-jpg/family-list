@@ -1,4 +1,4 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+﻿# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
@@ -39,3 +39,22 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 忽略系统和 IDE 临时文件
+.vs/
+.vscode/
+.DS_Store
+node_modules/
+
+# 忽略 Next.js 构建输出
+.next/
+out/
+build/
+
+# 忽略环境变量文件
+.env*.local
+
+# 忽略 PWA 自动生成的 SW 文件（部署时会自动重新生成）
+public/sw.js
+public/workbox-*.js
+public/sw.js.map
