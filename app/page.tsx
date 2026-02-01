@@ -32,6 +32,7 @@ export default function FamilyListPage() {
 
     // 1. 核心：从云端获取数据
     const fetchItems = async () => {
+        console.log("当前使用的 URL:", process.env.NEXT_PUBLIC_SUPABASE_URL); // 加这一行
         const { data, error } = await supabase
             .from('todos')
             .select('*')
