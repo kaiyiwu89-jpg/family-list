@@ -20,6 +20,7 @@ interface FamilyItem {
 const LISTS = [
     { id: 'walmart', name: 'Walmart' },
     { id: 'costco', name: 'Costco' },
+    { id: 'tt', name: 'T&T' },
     { id: 'wishlist', name: '愿望清单' },
 ];
 
